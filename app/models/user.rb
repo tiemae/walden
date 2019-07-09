@@ -9,5 +9,13 @@ class User < ApplicationRecord
   def full_name
     "#{first_name} #{last_name}"
   end
+
+  def tag_name
+    tag.name
+  end
+
+  def tag_picture
+    tag.image_url
+  end
     
 end

@@ -19,6 +19,10 @@ class Api::UsersController < ApplicationController
     end
   end
 
+  def profile
+    @user = current_user
+    render 'show.json.jbuilder'   
+  end
 
   def show
     user_id = params[:id]
@@ -32,6 +36,7 @@ class Api::UsersController < ApplicationController
     @user.last_name = params[:last_name] || @user.last_name
     @user.email = params[:email] || @user.email
     @user.password = params[:password] || @user.password
+    @user.password_confirmation = params[:password_confirmation] || @user.password_confirmation
     @user.image_url = params[:image_url] || @user.image_url
     @user.tag_id = params[:tag_id] || @user.tag_id
 

@@ -4,6 +4,10 @@ json.posts do
   json.array! @user.posts, partial:'api/posts/post', as: :post
 end 
 
+json.tag do
+  json.partial! @user.tag, partial:'api/tags/tag', as: :tag
+end 
+
 
 # @user.posts #this is an array of posts that 
 
