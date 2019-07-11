@@ -6,7 +6,7 @@ class Api::CommentsController < ApplicationController
     @comment = Comment.new(
        text: params[:text],
        post_id: params[:post_id],
-       user_id: params[:user_id] #changes to current_user.id      
+       user_id: current_user.id #changed to current_user.id - this is a backend method, not params (this takes care of it for me so I don't need to pass on front end once logged in)
       )
      if @comment.save
       render 'show.json.jbuilder'

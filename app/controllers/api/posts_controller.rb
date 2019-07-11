@@ -4,7 +4,7 @@ class Api::PostsController < ApplicationController
   before_action :authenticate_user, except: [:index, :show]
 
   def index 
-    @posts = Post.all
+    @posts = Post.all.order(created_at: :desc)
     render 'index.json.jbuilder'
   end
 
@@ -12,13 +12,15 @@ class Api::PostsController < ApplicationController
     @post = Post.new(
         title: params[:title],
         text: params[:text],
-        user_id: params[:user_id], #changes to current_user.id
+        user_id: current_user.id, #changes to current_user.id
         image_url: params[:image_url]
     )
     if @post.save
       #params[:tag_ids]=[2,7] => since this is getting passed from the front end as a strong, versus an array we need to destringify it
 
-      eval(params[:tag_ids]).each do |tag_id|
+      # eval is what turns front end info into a string (it destringifies the array)
+
+      params[:tag_ids].each do |tag_id|
           PostTag.create(
           tag_id: tag_id,
           post_id: @post.id
