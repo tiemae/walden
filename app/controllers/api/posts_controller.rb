@@ -48,6 +48,9 @@ class Api::PostsController < ApplicationController
 
     if @post.save
         render 'show.json.jbuilder'
+    
+    #would like to add code to update tags (perhaps I need to delete all of them and require a user to start over)  
+
     else 
         render json: {errors: @post.errors.full_messages}, status: :unprocessable_entity
     end

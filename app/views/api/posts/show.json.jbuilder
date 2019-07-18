@@ -6,7 +6,7 @@ end
 
 json.comments do
   json.array! @post.comments, partial:'api/comments/comment', as: :comment
-end 
+end  
 
 json.tags do
   json.array! @post.tags, partial:'api/tags/tag', as: :tag

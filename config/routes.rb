@@ -26,5 +26,10 @@ Rails.application.routes.draw do
     patch "/comments/:id" => "comments#update"
     delete "comments/:id" => "comments#destroy"
 
+    post "/replies" => "replies#create"
+    get "/replies/:id" => "replies#show"
+    patch "/replies/:id" => "replies#update"
+    delete "replies/:id" => "replies#destroy"
+
   end
 end
