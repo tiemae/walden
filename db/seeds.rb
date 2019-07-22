@@ -1,3 +1,24 @@
+Tag.create!([
+  {name: "Stage 7 - Full Bald", image_url: "https://res.cloudinary.com/dbfkcx98j/image/upload/v1563507343/stage-7-crop_otsra0.jpg"},
+  {name: "Stage 1 - Full Head", image_url: "https://res.cloudinary.com/dbfkcx98j/image/upload/v1563506761/stage-1-copy_ougbzu.jpg"},
+  {name: "Stage 2 - Slightly Receding", image_url: "https://res.cloudinary.com/dbfkcx98j/image/upload/v1563506937/stage-2-crop_i0ejgh.jpg"},
+  {name: "Stage 3 - Increased Thinning", image_url: "https://res.cloudinary.com/dbfkcx98j/image/upload/v1563507056/stage-3-crop_vfakye.jpg"},
+  {name: "Stage 4 - Moderate Thinning", image_url: "https://res.cloudinary.com/dbfkcx98j/image/upload/v1563507144/stage-4-crop_fttdrp.jpg"},
+  {name: "Stage 5 - Moderate All Over", image_url: "https://res.cloudinary.com/dbfkcx98j/image/upload/v1563507215/stage-5-crop_ggvmj8.jpg"},
+  {name: "Stage 6 - Extreme Thinness", image_url: "https://res.cloudinary.com/dbfkcx98j/image/upload/v1563507285/stage-6-crop_wdzqj8.jpg"}
+])
+User.create!([
+  {email: "morrie@gmail.com", password_digest: "$2a$12$Bak9phCVlFTu9WWKWOGYvenTOcI3xuBjQZl7bDLPPXBiyt3C2DB9q", image_url: "https://images.pexels.com/photos/2599039/pexels-photo-2599039.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", first_name: "Morrie", last_name: "Jones", tag_id: 2},
+  {email: "blues@gmail.com", password_digest: "$2a$12$9N./Iopx67H1nP/lPweFpONkF8c2qy7ZIf8WmxjWnb0sIuA6vjJNC", image_url: "https://images.pexels.com/photos/594610/pexels-photo-594610.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", first_name: "Jicama", last_name: "Blues", tag_id: 6},
+  {email: "raven@gmail.com", password_digest: "$2a$12$0iP.gDD3Hx5uyoG7Y6duo.KKyOkaYGbrv0RR3dnfPb9JtSrqS8rvq", image_url: "https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", first_name: "Bornea", last_name: "Raven", tag_id: 7},
+  {email: "alex.therrien@gmail.com", password_digest: "$2a$12$nIytwxmBc5Cxv0mxvLTaJebYLkYRqMt9NYA1hRfiel99pVFtBW1a2", image_url: "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", first_name: "Alex", last_name: "Therrien", tag_id: 2},
+  {email: "craig@gmail.com", password_digest: "$2a$12$Tlci4opE1YqMQ3ZDtmbHseMZ5jrAc1wTaXoh5xb8//MsxJPS5IWl6", image_url: "https://images.pexels.com/photos/1554827/pexels-photo-1554827.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", first_name: "Jerome", last_name: "Craig", tag_id: 7},
+  {email: "posh@gmail.com", password_digest: "$2a$12$frlGBpj3D2Ti50wLaFMiJed0Il2se8HPd9yb4c3gayrYTXCmAkufS", image_url: "https://images.pexels.com/photos/25758/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500", first_name: "Danny", last_name: "Posh", tag_id: 4},
+  {email: "sum@gmail.com", password_digest: "$2a$12$18dbYZBBnQL9MBv8mbCqVeWX7o7f/BFfy20cKAKq2jsHay4iaKlUW", image_url: "https://images.pexels.com/photos/1436289/pexels-photo-1436289.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", first_name: "Jonny", last_name: "Sum", tag_id: 1},
+  {email: "forest@gmail.com", password_digest: "$2a$12$c6DqeZecG..18eXfPgRpRufaJj75719HMRAc1/Chj42GtxXH0j7Bu", image_url: "https://images.pexels.com/photos/2208587/pexels-photo-2208587.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", first_name: "Forest", last_name: "Pump", tag_id: 6},
+  {email: "george@gmail.com", password_digest: "$2a$12$af3J214M/1iwsslx1GhWZ.DjWO9qSsPMWCXBSSEJpNUcV9yyzhsDq", image_url: "https://images.pexels.com/photos/2269872/pexels-photo-2269872.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", first_name: "George", last_name: "Bloom", tag_id: 5}
+])
+
 Post.create!([
   {title: "Holy Smokes, It's A lot ", text: "Blessed are the cheesemakers cut the cheese Penicillium roqueforti 10 grilled cheese sandwiches you should try immediately with raw milk is unpasteurized raw milk is unpasteurized the slice of cheese is placed on top of the meat patty when the rennet is added, curds are formed dutch sandwich cheese paring with wine.", user_id: 1, image_url: "https://images.pexels.com/photos/2193943/pexels-photo-2193943.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"},
   {title: "Tips For A Sweet Summer Look", text: "Washed curd cheese wash, rinse, repeat in an artisan farmerhouse the whiter and fresher the cheese, the crisper and fruitier the wine should be until the wheels form a white coat of penicillium moulds the early bird may get the worm, but the second mouse gets the cheese in the trap in an artisan farmerhouse it is blue sky thinking Sheridans Cheesemongers of cheesy business lingo.", user_id: 2, image_url: "https://images.pexels.com/photos/1130834/pexels-photo-1130834.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"},
@@ -40,23 +61,10 @@ PostTag.create!([
   {post_id: 6, tag_id: 2},
   {post_id: 6, tag_id: 5}
 ])
-Tag.create!([
-  {name: "Stage 7 - Full Bald", image_url: "https://res.cloudinary.com/dbfkcx98j/image/upload/v1563507343/stage-7-crop_otsra0.jpg"},
-  {name: "Stage 1 - Full Head", image_url: "https://res.cloudinary.com/dbfkcx98j/image/upload/v1563506761/stage-1-copy_ougbzu.jpg"},
-  {name: "Stage 2 - Slightly Receding", image_url: "https://res.cloudinary.com/dbfkcx98j/image/upload/v1563506937/stage-2-crop_i0ejgh.jpg"},
-  {name: "Stage 3 - Increased Thinning", image_url: "https://res.cloudinary.com/dbfkcx98j/image/upload/v1563507056/stage-3-crop_vfakye.jpg"},
-  {name: "Stage 4 - Moderate Thinning", image_url: "https://res.cloudinary.com/dbfkcx98j/image/upload/v1563507144/stage-4-crop_fttdrp.jpg"},
-  {name: "Stage 5 - Moderate All Over", image_url: "https://res.cloudinary.com/dbfkcx98j/image/upload/v1563507215/stage-5-crop_ggvmj8.jpg"},
-  {name: "Stage 6 - Extreme Thinness", image_url: "https://res.cloudinary.com/dbfkcx98j/image/upload/v1563507285/stage-6-crop_wdzqj8.jpg"}
+
+Comment.create!([
+
 ])
-User.create!([
-  {email: "morrie@gmail.com", password_digest: "$2a$12$Bak9phCVlFTu9WWKWOGYvenTOcI3xuBjQZl7bDLPPXBiyt3C2DB9q", image_url: "https://images.pexels.com/photos/2599039/pexels-photo-2599039.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", first_name: "Morrie", last_name: "Jones", tag_id: 2},
-  {email: "blues@gmail.com", password_digest: "$2a$12$9N./Iopx67H1nP/lPweFpONkF8c2qy7ZIf8WmxjWnb0sIuA6vjJNC", image_url: "https://images.pexels.com/photos/594610/pexels-photo-594610.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", first_name: "Jicama", last_name: "Blues", tag_id: 6},
-  {email: "raven@gmail.com", password_digest: "$2a$12$0iP.gDD3Hx5uyoG7Y6duo.KKyOkaYGbrv0RR3dnfPb9JtSrqS8rvq", image_url: "https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", first_name: "Bornea", last_name: "Raven", tag_id: 7},
-  {email: "alex.therrien@gmail.com", password_digest: "$2a$12$nIytwxmBc5Cxv0mxvLTaJebYLkYRqMt9NYA1hRfiel99pVFtBW1a2", image_url: "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", first_name: "Alex", last_name: "Therrien", tag_id: 2},
-  {email: "craig@gmail.com", password_digest: "$2a$12$Tlci4opE1YqMQ3ZDtmbHseMZ5jrAc1wTaXoh5xb8//MsxJPS5IWl6", image_url: "https://images.pexels.com/photos/1554827/pexels-photo-1554827.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", first_name: "Jerome", last_name: "Craig", tag_id: 7},
-  {email: "posh@gmail.com", password_digest: "$2a$12$frlGBpj3D2Ti50wLaFMiJed0Il2se8HPd9yb4c3gayrYTXCmAkufS", image_url: "https://images.pexels.com/photos/25758/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500", first_name: "Danny", last_name: "Posh", tag_id: 4},
-  {email: "sum@gmail.com", password_digest: "$2a$12$18dbYZBBnQL9MBv8mbCqVeWX7o7f/BFfy20cKAKq2jsHay4iaKlUW", image_url: "https://images.pexels.com/photos/1436289/pexels-photo-1436289.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", first_name: "Jonny", last_name: "Sum", tag_id: 1},
-  {email: "forest@gmail.com", password_digest: "$2a$12$c6DqeZecG..18eXfPgRpRufaJj75719HMRAc1/Chj42GtxXH0j7Bu", image_url: "https://images.pexels.com/photos/2208587/pexels-photo-2208587.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", first_name: "Forest", last_name: "Pump", tag_id: 6},
-  {email: "george@gmail.com", password_digest: "$2a$12$af3J214M/1iwsslx1GhWZ.DjWO9qSsPMWCXBSSEJpNUcV9yyzhsDq", image_url: "https://images.pexels.com/photos/2269872/pexels-photo-2269872.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", first_name: "George", last_name: "Bloom", tag_id: 5}
+
+Reply.create!([
 ])
