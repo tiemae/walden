@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+
+    root '/'
   # EXAMPLE HTML ROUTE
   # get "/photos" => "photos#index"
 
@@ -34,4 +37,6 @@ Rails.application.routes.draw do
   end
 
     get "/*path" => proc { [200, {}, [ActionView::Base.new.render(file: 'public/index.html')]] }
+
+
 end
