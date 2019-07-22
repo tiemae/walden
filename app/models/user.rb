@@ -5,7 +5,7 @@ class User < ApplicationRecord
   belongs_to :tag
 
   has_secure_password
-  validates :email, presence: true, uniqueness: true
+  validates :email, presence: true
 
   def full_name
     "#{first_name} #{last_name}"
