@@ -1,5 +1,3 @@
-Comment.create!([
-])
 Post.create!([
   {title: "Holy Smokes, It's A lot ", text: "Blessed are the cheesemakers cut the cheese Penicillium roqueforti 10 grilled cheese sandwiches you should try immediately with raw milk is unpasteurized raw milk is unpasteurized the slice of cheese is placed on top of the meat patty when the rennet is added, curds are formed dutch sandwich cheese paring with wine.", user_id: 1, image_url: "https://images.pexels.com/photos/2193943/pexels-photo-2193943.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"},
   {title: "Tips For A Sweet Summer Look", text: "Washed curd cheese wash, rinse, repeat in an artisan farmerhouse the whiter and fresher the cheese, the crisper and fruitier the wine should be until the wheels form a white coat of penicillium moulds the early bird may get the worm, but the second mouse gets the cheese in the trap in an artisan farmerhouse it is blue sky thinking Sheridans Cheesemongers of cheesy business lingo.", user_id: 2, image_url: "https://images.pexels.com/photos/1130834/pexels-photo-1130834.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"},
