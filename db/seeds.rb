@@ -40,8 +40,6 @@ PostTag.create!([
   {post_id: 6, tag_id: 2},
   {post_id: 6, tag_id: 5}
 ])
-Reply.create!([
-])
 Tag.create!([
   {name: "Stage 7 - Full Bald", image_url: "https://res.cloudinary.com/dbfkcx98j/image/upload/v1563507343/stage-7-crop_otsra0.jpg"},
   {name: "Stage 1 - Full Head", image_url: "https://res.cloudinary.com/dbfkcx98j/image/upload/v1563506761/stage-1-copy_ougbzu.jpg"},
